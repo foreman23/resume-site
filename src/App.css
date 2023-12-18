@@ -1,8 +1,14 @@
 .MainContainer {
   display: flex;
-  justify-content: space-between;
-  text-align: center;
   flex-direction: column;
   align-items: center;
   margin-top: 4vh;
+}
+
+.MainLeftColumn {
+  margin-top: 25%;
+}
+
+.MainRightColumn {
+  margin-top: 15%;
 }
