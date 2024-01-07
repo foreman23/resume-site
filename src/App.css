@@ -17,3 +17,21 @@
   display: flex;
   justify-content: center;
 }
+
+.SkillsList li {
+    display: inline-table;
+    width: auto;
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: #0C6C4A;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.skillLogo {
+  margin: 10px;
+}

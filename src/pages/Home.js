@@ -1,6 +1,6 @@
 import { Container, Row, Col} from 'react-bootstrap';
 import { Image, Icon, Button, Divider } from 'semantic-ui-react';
-import Navbar from './components/Navbar';
+import Navbar from '../components/Navbar';
 import React from 'react'
 
 const Home = () => {
@@ -10,6 +10,8 @@ const Home = () => {
             <Navbar></Navbar>
 
             <Container className='MainContainer'>
+
+                {/* Home Section */}
                 <Row>
                     <Col lg={7}>
                         <div className='MainLeftColumn'>
@@ -38,8 +40,9 @@ const Home = () => {
                     </Col>
                 </Row>
 
-                {/* <Row style={{ justifyContent:'center' }}>
-                    <div style={{ marginTop: 105, marginBottom: 70, width: '85%' }}>
+                {/* Project Section */}
+                <Row style={{ justifyContent:'center' }}>
+                    <div style={{ marginTop: 175, width: '100%' }}>
                         <h2 style={{ justifyContent: 'center', textAlign: 'center' }}>Projects</h2>
                         <Divider></Divider>
                         <Row>
@@ -65,7 +68,46 @@ const Home = () => {
                             </Col>
                         </Row>
                     </div>
-                </Row> */}
+                </Row>
+
+                {/* Skill Section */}
+                <Row style={{ justifyContent:'center' }}>
+                    <div style={{ marginTop: 100, marginBottom: 70, width: '100%' }}>
+                        <h2 style={{ justifyContent: 'center', textAlign: 'center' }}>Skills</h2>
+                        <Divider></Divider>
+                        <Row>
+                            <div style={{ flexDirection: 'row', display: 'flex', justifyContent: 'center' }}>
+                                <Image className='skillLogo' size='tiny' src='/images/js.webp'></Image>
+                                <Image className='skillLogo' size='tiny' src='/images/node.webp'></Image>
+                                <Image className='skillLogo' size='tiny' src='/images/react.webp'></Image>
+                                <Image className='skillLogo' size='tiny' src='/images/python.webp'></Image>
+                            </div>
+                        </Row>
+                        <Row>
+                            <div style={{ flexDirection: 'row', display: 'flex', justifyContent: 'center' }}>
+                                <Image className='skillLogo' size='tiny' src='/images/html.webp'></Image>
+                                <Image className='skillLogo' size='tiny' src='/images/css.webp'></Image>
+                                <Image className='skillLogo' size='tiny' src='/images/git.webp'></Image>
+                                <Image className='skillLogo' size='tiny' src='/images/firebase.webp'></Image>
+                            </div>
+                        </Row>
+                    </div>
+                </Row>
+
+                {/* Contact Section */}
+                <Row>
+                    <div style={{ marginTop: 20, marginBottom: 140, width: '100%' }}>
+                        <h2 style={{ justifyContent: 'center', textAlign: 'center' }}>Contact</h2>
+                        <Divider></Divider>
+                        <Row>
+                            <div style={{ flexDirection: 'row', display: 'flex', justifyContent: 'center' }}>
+                                <a className='skillLogo' href='https://github.com/foreman23' target='_blank' rel='noreferrer'><Icon color='black' name='github' size='huge'></Icon></a>
+                                <a className='skillLogo' href='https://www.linkedin.com/in/brandon-foreman-92057b280/' target='_blank' rel='noreferrer'><Icon color='black' name='linkedin' size='huge'></Icon></a>
+                                <a className='skillLogo' href='mailto:bforemana@gmail.com' target='_blank' rel='noreferrer'><Icon color='black' name='mail' size='huge'></Icon></a>
+                            </div>
+                        </Row>
+                    </div>
+                </Row>
 
             </Container>
         </div>
