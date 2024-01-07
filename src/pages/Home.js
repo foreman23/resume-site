@@ -47,24 +47,24 @@ const Home = () => {
                         <Divider></Divider>
                         <Row>
                             <Col>
-                                <Image href='/blog-portal' src='https://placehold.co/600x400/EEE/31343C'></Image>
+                                <Image href='/blog-portal' src='/images/projects/blog-portal-thumb.webp'></Image>
                             </Col>
                             <Col>
-                                <Image href='/spotter-site' src='https://placehold.co/600x400/EEE/31343C'></Image>
+                                <Image href='/spotter-site' src='/images/projects/spotter-site-thumb.webp'></Image>
                             </Col>
                             <Col>
-                                <Image href='/rsvp-site' src='https://placehold.co/600x400/EEE/31343C'></Image>
+                                <Image href='/rsvp-site' src='/images/projects/quince-rsvp-thumb.webp'></Image>
                             </Col>
                         </Row>
                         <Row style={{ marginTop: 20 }}>
                             <Col>
-                                <Image href='/aircraft-api' src='https://placehold.co/600x400/EEE/31343C'></Image>
+                                <Image href='/aircraft-api' src='/images/projects/portfolio-api-thumb.webp'></Image>
                             </Col>
                             <Col>
-                                <Image href='/twitter-bot' src='https://placehold.co/600x400/EEE/31343C'></Image>
+                                <Image href='/twitter-bot' src='/images/projects/twitter-bot-thumb.webp'></Image>
                             </Col>
                             <Col>
-                                <Image href='/vet-panel' src='https://placehold.co/600x400/EEE/31343C'></Image>
+                                <Image href='/vet-panel' src='/images/projects/admin-panel-thumb.webp'></Image>
                             </Col>
                         </Row>
                     </div>
@@ -77,18 +77,18 @@ const Home = () => {
                         <Divider></Divider>
                         <Row>
                             <div style={{ flexDirection: 'row', display: 'flex', justifyContent: 'center' }}>
-                                <Image className='skillLogo' size='tiny' src='/images/js.webp'></Image>
-                                <Image className='skillLogo' size='tiny' src='/images/node.webp'></Image>
-                                <Image className='skillLogo' size='tiny' src='/images/react.webp'></Image>
-                                <Image className='skillLogo' size='tiny' src='/images/python.webp'></Image>
+                                <Image className='skillLogo' size='tiny' src='/images/skills/js.webp'></Image>
+                                <Image className='skillLogo' size='tiny' src='/images/skills/node.webp'></Image>
+                                <Image className='skillLogo' size='tiny' src='/images/skills/react.webp'></Image>
+                                <Image className='skillLogo' size='tiny' src='/images/skills/python.webp'></Image>
                             </div>
                         </Row>
                         <Row>
                             <div style={{ flexDirection: 'row', display: 'flex', justifyContent: 'center' }}>
-                                <Image className='skillLogo' size='tiny' src='/images/html.webp'></Image>
-                                <Image className='skillLogo' size='tiny' src='/images/css.webp'></Image>
-                                <Image className='skillLogo' size='tiny' src='/images/git.webp'></Image>
-                                <Image className='skillLogo' size='tiny' src='/images/firebase.webp'></Image>
+                                <Image className='skillLogo' size='tiny' src='/images/skills/html.webp'></Image>
+                                <Image className='skillLogo' size='tiny' src='/images/skills/css.webp'></Image>
+                                <Image className='skillLogo' size='tiny' src='/images/skills/git.webp'></Image>
+                                <Image className='skillLogo' size='tiny' src='/images/skills/firebase.webp'></Image>
                             </div>
                         </Row>
                     </div>
