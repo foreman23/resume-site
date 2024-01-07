@@ -47,24 +47,24 @@ const Home = () => {
                         <Divider></Divider>
                         <Row>
                             <Col>
-                                <Image src='https://placehold.co/600x400/EEE/31343C'></Image>
+                                <Image href='/blog-portal' src='https://placehold.co/600x400/EEE/31343C'></Image>
                             </Col>
                             <Col>
-                                <Image src='https://placehold.co/600x400/EEE/31343C'></Image>
+                                <Image href='/spotter-site' src='https://placehold.co/600x400/EEE/31343C'></Image>
                             </Col>
                             <Col>
-                                <Image src='https://placehold.co/600x400/EEE/31343C'></Image>
+                                <Image href='/rsvp-site' src='https://placehold.co/600x400/EEE/31343C'></Image>
                             </Col>
                         </Row>
                         <Row style={{ marginTop: 20 }}>
                             <Col>
-                                <Image src='https://placehold.co/600x400/EEE/31343C'></Image>
+                                <Image href='/aircraft-api' src='https://placehold.co/600x400/EEE/31343C'></Image>
                             </Col>
                             <Col>
-                                <Image src='https://placehold.co/600x400/EEE/31343C'></Image>
+                                <Image href='/twitter-bot' src='https://placehold.co/600x400/EEE/31343C'></Image>
                             </Col>
                             <Col>
-                                <Image src='https://placehold.co/600x400/EEE/31343C'></Image>
+                                <Image href='/vet-panel' src='https://placehold.co/600x400/EEE/31343C'></Image>
                             </Col>
                         </Row>
                     </div>
