@@ -55,7 +55,7 @@ const Home = () => {
                                 <div className='projectCard' onClick={() => navigate('/blog-portal')}>
                                     <img className='projectImage' alt='blog portal' href='/blog-portal' src='/images/projects/blog-portal-thumb.webp' bordered></img>
                                     <h3 className='projectCardTitle'>Blog Portal</h3>
-                                    <p className='projectCardDesc'>Integer sit amet justo in odio consectetur congue. Suspendisse vitae urna vel nunc hendrerit dapibus.</p>
+                                    <p className='projectCardDesc'>Simple web application that allows for blog creation and management.</p>
                                     <div className='projectCardButtons'>
                                         <Button onClick={(e) => { e.stopPropagation(); window.open('https://master.d3b93eb65qaz8j.amplifyapp.com/blogs', '_blank'); }} className='greenButton'>Open Site</Button>
                                         <Button onClick={(e) => { e.stopPropagation(); window.open('https://github.com/foreman23/blog_portal', '_blank'); }}>GitHub Repo</Button>
@@ -66,7 +66,7 @@ const Home = () => {
                                 <div className='projectCard'>
                                     <img className='projectImage' alt='spotter site' href='/spotter-site' src='/images/projects/spotter-site-thumb.webp' bordered></img>
                                     <h3 className='projectCardTitle'>Planespotter Website React</h3>
-                                    <p className='projectCardDesc'>Integer sit amet justo in odio consectetur congue. Suspendisse vitae urna vel nunc hendrerit dapibus.</p>
+                                    <p className='projectCardDesc'>Frontend website concept/prototype built in React for a friend.</p>
                                     <div className='projectCardButtons'>
                                         <Button onClick={(e) => { e.stopPropagation(); window.open('https://iridescent-dieffenbachia-dc0236.netlify.app/', '_blank'); }} className='greenButton'>Open Site</Button>
                                         <Button onClick={(e) => { e.stopPropagation(); window.open('https://github.com/foreman23/planespotter_site', '_blank'); }}>GitHub Repo</Button>
@@ -77,8 +77,8 @@ const Home = () => {
                             <Col>
                                 <div className='projectCard'>
                                     <img className='projectImage' alt='quince rsvp' href='/rsvp-site' src='/images/projects/quince-rsvp-thumb.webp' bordered></img>
-                                    <h3 className='projectCardTitle'>Quincenera RSVP Website</h3>
-                                    <p className='projectCardDesc'>Integer sit amet justo in odio consectetur congue. Suspendisse vitae urna vel nunc hendrerit dapibus.</p>
+                                    <h3 className='projectCardTitle'>Quinceañera RSVP Website</h3>
+                                    <p className='projectCardDesc'>Digital RSVP page built for a client for their daughter's quince.</p>
                                     <div className='projectCardButtons'>
                                         <Button onClick={(e) => { e.stopPropagation(); window.open('https://melanie15.com/', '_blank'); }} className='greenButton'>Open Site</Button>
                                         <Button onClick={(e) => { e.stopPropagation(); window.open('https://github.com/foreman23/quince-rsvp', '_blank'); }}>GitHub Repo</Button>
@@ -91,7 +91,7 @@ const Home = () => {
                                 <div className='projectCard'>
                                     <img className='projectImage' alt='aircraft api' href='/aircraft-api' src='/images/projects/portfolio-api-thumb.webp' bordered></img>
                                     <h3 className='projectCardTitle'>Aircraft Cargo Management RESTful API</h3>
-                                    <p className='projectCardDesc'>Integer sit amet justo in odio consectetur congue. Suspendisse vitae urna vel nunc hendrerit dapibus.</p>
+                                    <p className='projectCardDesc'>CS 493 Final Project. A RESTful API for managing cargo loads on aircraft.</p>
                                     <div className='projectCardButtons'>
                                         <Button onClick={(e) => { e.stopPropagation(); window.open('https://github.com/foreman23/portfolio-api', '_blank'); }}>GitHub Repo</Button>
                                     </div>
@@ -101,7 +101,7 @@ const Home = () => {
                                 <div className='projectCard'>
                                     <img className='projectImage' alt='twitter bot' href='/twitter-bot' src='/images/projects/twitter-bot-thumb.webp' bordered></img>
                                     <h3 className='projectCardTitle'>Twitter Headline Art Bot</h3>
-                                    <p className='projectCardDesc'>Integer sit amet justo in odio consectetur congue. Suspendisse vitae urna vel nunc hendrerit dapibus.</p>
+                                    <p className='projectCardDesc'>Fun project utilizing Raspberry Pi and Python to build an AI powered art bot.</p>
                                     <div className='projectCardButtons'>
                                         <Button onClick={(e) => { e.stopPropagation(); window.open('https://twitter.com/NBA_ArtBot', '_blank'); }} color='twitter'>Open Twitter</Button>
                                         <Button onClick={(e) => { e.stopPropagation(); window.open('https://github.com/foreman23/news-twitter-bot', '_blank'); }}>GitHub Repo</Button>
@@ -113,7 +113,7 @@ const Home = () => {
                                 <div className='projectCard'>
                                     <img className='projectImage' alt='admin panel' href='/vet-panel' src='/images/projects/admin-panel-thumb.webp' bordered></img>
                                     <h3 className='projectCardTitle'>Web Panel - Veterinary Drug App</h3>
-                                    <p className='projectCardDesc'>Integer sit amet justo in odio consectetur congue. Suspendisse vitae urna vel nunc hendrerit dapibus.</p>
+                                    <p className='projectCardDesc'>Senior capstone group project. A webpanel for managing a database for a mobile application.</p>
                                     <div className='projectCardButtons'>
                                         <Button onClick={(e) => { e.stopPropagation(); window.open('https://github.com/katieschaum/vetwebapp', '_blank'); }}>GitHub Repo</Button>
                                     </div>
