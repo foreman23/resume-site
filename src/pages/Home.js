@@ -1,9 +1,14 @@
-import { Container, Row, Col} from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { Image, Icon, Button, Divider } from 'semantic-ui-react';
 import Navbar from '../components/Navbar';
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+
+
+    const navigate = useNavigate();
+
     return (
         <div>
 
@@ -27,7 +32,7 @@ const Home = () => {
                             </Row>
                             <Row>
                                 <div>
-                                    <Button href='mailto:bforemana@gmail.com' style={{backgroundColor: '#0E8A5F', color: 'white'}}>Send a Message</Button>
+                                    <Button href='mailto:bforemana@gmail.com' className='greenButton'>Send a Message</Button>
                                     <Button href='https://drive.google.com/file/d/1VbkeZc9g1s4rV7L2N8K2rsKbaQoJDLL6/view?usp=sharing' target='_blank'>My Resume</Button>
                                 </div>
                             </Row>
@@ -41,37 +46,85 @@ const Home = () => {
                 </Row>
 
                 {/* Project Section */}
-                <Row style={{ justifyContent:'center' }}>
-                    <div style={{ marginTop: 175, width: '100%' }}>
+                <Row style={{ justifyContent: 'center' }}>
+                    <div style={{ marginTop: 140, width: '100%' }}>
                         <h2 style={{ justifyContent: 'center', textAlign: 'center' }}>Projects</h2>
                         <Divider></Divider>
-                        <Row>
+                        <Row style={{ marginTop: '25px' }}>
                             <Col>
-                                <Image href='/blog-portal' src='/images/projects/blog-portal-thumb.webp'></Image>
+                                <div className='projectCard' onClick={() => navigate('/blog-portal')}>
+                                    <img className='projectImage' alt='blog portal' href='/blog-portal' src='/images/projects/blog-portal-thumb.webp' bordered></img>
+                                    <h3 className='projectCardTitle'>Blog Portal</h3>
+                                    <p className='projectCardDesc'>Integer sit amet justo in odio consectetur congue. Suspendisse vitae urna vel nunc hendrerit dapibus.</p>
+                                    <div className='projectCardButtons'>
+                                        <Button onClick={(e) => { e.stopPropagation(); window.open('https://master.d3b93eb65qaz8j.amplifyapp.com/blogs', '_blank'); }} className='greenButton'>Open Site</Button>
+                                        <Button onClick={(e) => { e.stopPropagation(); window.open('https://github.com/foreman23/blog_portal', '_blank'); }}>GitHub Repo</Button>
+                                    </div>
+                                </div>
                             </Col>
                             <Col>
-                                <Image href='/spotter-site' src='/images/projects/spotter-site-thumb.webp'></Image>
+                                <div className='projectCard'>
+                                    <img className='projectImage' alt='spotter site' href='/spotter-site' src='/images/projects/spotter-site-thumb.webp' bordered></img>
+                                    <h3 className='projectCardTitle'>Planespotter Website React</h3>
+                                    <p className='projectCardDesc'>Integer sit amet justo in odio consectetur congue. Suspendisse vitae urna vel nunc hendrerit dapibus.</p>
+                                    <div className='projectCardButtons'>
+                                        <Button onClick={(e) => { e.stopPropagation(); window.open('https://iridescent-dieffenbachia-dc0236.netlify.app/', '_blank'); }} className='greenButton'>Open Site</Button>
+                                        <Button onClick={(e) => { e.stopPropagation(); window.open('https://github.com/foreman23/planespotter_site', '_blank'); }}>GitHub Repo</Button>
+                                    </div>
+                                </div>
+
                             </Col>
                             <Col>
-                                <Image href='/rsvp-site' src='/images/projects/quince-rsvp-thumb.webp'></Image>
+                                <div className='projectCard'>
+                                    <img className='projectImage' alt='quince rsvp' href='/rsvp-site' src='/images/projects/quince-rsvp-thumb.webp' bordered></img>
+                                    <h3 className='projectCardTitle'>Quincenera RSVP Website</h3>
+                                    <p className='projectCardDesc'>Integer sit amet justo in odio consectetur congue. Suspendisse vitae urna vel nunc hendrerit dapibus.</p>
+                                    <div className='projectCardButtons'>
+                                        <Button onClick={(e) => { e.stopPropagation(); window.open('https://melanie15.com/', '_blank'); }} className='greenButton'>Open Site</Button>
+                                        <Button onClick={(e) => { e.stopPropagation(); window.open('https://github.com/foreman23/quince-rsvp', '_blank'); }}>GitHub Repo</Button>
+                                    </div>
+                                </div>
                             </Col>
                         </Row>
                         <Row style={{ marginTop: 20 }}>
                             <Col>
-                                <Image href='/aircraft-api' src='/images/projects/portfolio-api-thumb.webp'></Image>
+                                <div className='projectCard'>
+                                    <img className='projectImage' alt='aircraft api' href='/aircraft-api' src='/images/projects/portfolio-api-thumb.webp' bordered></img>
+                                    <h3 className='projectCardTitle'>Aircraft Cargo Management RESTful API</h3>
+                                    <p className='projectCardDesc'>Integer sit amet justo in odio consectetur congue. Suspendisse vitae urna vel nunc hendrerit dapibus.</p>
+                                    <div className='projectCardButtons'>
+                                        <Button onClick={(e) => { e.stopPropagation(); window.open('https://github.com/foreman23/portfolio-api', '_blank'); }}>GitHub Repo</Button>
+                                    </div>
+                                </div>
                             </Col>
                             <Col>
-                                <Image href='/twitter-bot' src='/images/projects/twitter-bot-thumb.webp'></Image>
+                                <div className='projectCard'>
+                                    <img className='projectImage' alt='twitter bot' href='/twitter-bot' src='/images/projects/twitter-bot-thumb.webp' bordered></img>
+                                    <h3 className='projectCardTitle'>Twitter Headline Art Bot</h3>
+                                    <p className='projectCardDesc'>Integer sit amet justo in odio consectetur congue. Suspendisse vitae urna vel nunc hendrerit dapibus.</p>
+                                    <div className='projectCardButtons'>
+                                        <Button onClick={(e) => { e.stopPropagation(); window.open('https://twitter.com/NBA_ArtBot', '_blank'); }} color='twitter'>Open Twitter</Button>
+                                        <Button onClick={(e) => { e.stopPropagation(); window.open('https://github.com/foreman23/news-twitter-bot', '_blank'); }}>GitHub Repo</Button>
+                                    </div>
+                                </div>
+
                             </Col>
                             <Col>
-                                <Image href='/vet-panel' src='/images/projects/admin-panel-thumb.webp'></Image>
+                                <div className='projectCard'>
+                                    <img className='projectImage' alt='admin panel' href='/vet-panel' src='/images/projects/admin-panel-thumb.webp' bordered></img>
+                                    <h3 className='projectCardTitle'>Web Panel - Veterinary Drug App</h3>
+                                    <p className='projectCardDesc'>Integer sit amet justo in odio consectetur congue. Suspendisse vitae urna vel nunc hendrerit dapibus.</p>
+                                    <div className='projectCardButtons'>
+                                        <Button onClick={(e) => { e.stopPropagation(); window.open('https://github.com/katieschaum/vetwebapp', '_blank'); }}>GitHub Repo</Button>
+                                    </div>
+                                </div>
                             </Col>
                         </Row>
                     </div>
                 </Row>
 
                 {/* Skill Section */}
-                <Row style={{ justifyContent:'center' }}>
+                <Row style={{ justifyContent: 'center' }}>
                     <div style={{ marginTop: 100, marginBottom: 70, width: '100%' }}>
                         <h2 style={{ justifyContent: 'center', textAlign: 'center' }}>Skills</h2>
                         <Divider></Divider>
