@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   margin: auto;
-  margin-top: 4vh;
+  margin-top: 7vh;
 }
 
 .MainLeftColumn {
@@ -54,11 +54,11 @@
   cursor: pointer;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
   margin: 2px;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
 }
 
 .projectCard:hover {
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
   /* transform: scale(1.005); */
 }
 
@@ -95,4 +95,22 @@
 
 .greenButton:hover {
   background-color: #0c7951 !important;
+}
+
+.carouselContainer {
+  padding-bottom: 35px;
+}
+
+#root > div > div:nth-child(2) > div > div > button.slick-arrow {
+  color: black;
+}
+
+.slick-prev:before {
+  color: grey !important;
+  font-size: 32px !important;
+}
+
+.slick-next:before {
+  color: grey !important;
+  font-size: 32px !important;
 }

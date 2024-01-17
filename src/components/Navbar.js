@@ -4,7 +4,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 const NavigationBar = () => {
     return (
         <div>
-            <Navbar style={{ marginBottom: '5%' }} expand="lg" className="NavBar">
+            <Navbar expand="lg" className="NavBar">
                 <Container style={{ display: 'flex' }}>
                     <Navbar.Brand style={{ fontWeight: 'bold' }} href="/">Brandon Foreman</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />

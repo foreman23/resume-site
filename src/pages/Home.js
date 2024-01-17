@@ -53,7 +53,7 @@ const Home = () => {
                         <Row style={{ marginTop: '25px' }}>
                             <Col>
                                 <div className='projectCard' onClick={() => navigate('/blog-portal')}>
-                                    <img className='projectImage' alt='blog portal' href='/blog-portal' src='/images/projects/blog-portal-thumb.webp' bordered></img>
+                                    <img className='projectImage' alt='blog portal' href='/blog-portal' src='/images/projects/blog-portal/blog-portal-thumb.webp' bordered></img>
                                     <h3 className='projectCardTitle'>Blog Portal</h3>
                                     <p className='projectCardDesc'>Simple web application that allows for blog creation and management.</p>
                                     <div className='projectCardButtons'>
@@ -63,8 +63,8 @@ const Home = () => {
                                 </div>
                             </Col>
                             <Col>
-                                <div className='projectCard'>
-                                    <img className='projectImage' alt='spotter site' href='/spotter-site' src='/images/projects/spotter-site-thumb.webp' bordered></img>
+                                <div className='projectCard' onClick={() => navigate('/spotter-site')}>
+                                    <img className='projectImage' alt='spotter site' href='/spotter-site' src='/images/projects/spotter-site/spotter-site-thumb.webp' bordered></img>
                                     <h3 className='projectCardTitle'>Planespotter Website React</h3>
                                     <p className='projectCardDesc'>Frontend website concept/prototype built in React for a friend.</p>
                                     <div className='projectCardButtons'>
@@ -75,8 +75,8 @@ const Home = () => {
 
                             </Col>
                             <Col>
-                                <div className='projectCard'>
-                                    <img className='projectImage' alt='quince rsvp' href='/rsvp-site' src='/images/projects/quince-rsvp-thumb.webp' bordered></img>
+                                <div className='projectCard' onClick={() => navigate('/rsvp-site')}>
+                                    <img className='projectImage' alt='quince rsvp' href='/rsvp-site' src='/images/projects/rsvp-site/rsvp-site-thumb.webp' bordered></img>
                                     <h3 className='projectCardTitle'>Quinceañera RSVP Website</h3>
                                     <p className='projectCardDesc'>Digital RSVP page built for a client for their daughter's quince.</p>
                                     <div className='projectCardButtons'>
@@ -88,7 +88,7 @@ const Home = () => {
                         </Row>
                         <Row style={{ marginTop: 20 }}>
                             <Col>
-                                <div className='projectCard'>
+                                <div className='projectCard' onClick={() => navigate('/aircraft-api')}>
                                     <img className='projectImage' alt='aircraft api' href='/aircraft-api' src='/images/projects/portfolio-api-thumb.webp' bordered></img>
                                     <h3 className='projectCardTitle'>Aircraft Cargo Management RESTful API</h3>
                                     <p className='projectCardDesc'>CS 493 Final Project. A RESTful API for managing cargo loads on aircraft.</p>
@@ -98,8 +98,8 @@ const Home = () => {
                                 </div>
                             </Col>
                             <Col>
-                                <div className='projectCard'>
-                                    <img className='projectImage' alt='twitter bot' href='/twitter-bot' src='/images/projects/twitter-bot-thumb.webp' bordered></img>
+                                <div className='projectCard' onClick={() => navigate('/twitter-bot')}>
+                                    <img className='projectImage' alt='twitter bot' href='/twitter-bot' src='/images/projects/twitter-bot/twitter-bot-thumb.webp' bordered></img>
                                     <h3 className='projectCardTitle'>Twitter Headline Art Bot</h3>
                                     <p className='projectCardDesc'>Fun project utilizing Raspberry Pi and Python to build an AI powered art bot.</p>
                                     <div className='projectCardButtons'>
@@ -110,8 +110,8 @@ const Home = () => {
 
                             </Col>
                             <Col>
-                                <div className='projectCard'>
-                                    <img className='projectImage' alt='admin panel' href='/vet-panel' src='/images/projects/admin-panel-thumb.webp' bordered></img>
+                                <div className='projectCard' onClick={() => navigate('/vet-panel')}>
+                                    <img className='projectImage' alt='admin panel' href='/vet-panel' src='/images/projects/vet-panel/vet-panel-thumb.webp' bordered></img>
                                     <h3 className='projectCardTitle'>Web Panel - Veterinary Drug App</h3>
                                     <p className='projectCardDesc'>Senior capstone group project. A webpanel for managing a database for a mobile application.</p>
                                     <div className='projectCardButtons'>
