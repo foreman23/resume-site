@@ -2,10 +2,12 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { projectData } from '../data/ProjectData';
 import { Row, Col, Container } from 'react-bootstrap';
+import { List, ListItem } from 'semantic-ui-react';
 import Navbar from '../components/Navbar';
 import Slider from "react-slick";
 import YouTube from 'react-youtube';
 import ApiBlog from '../components/ApiBlog';
+import BlogPortalBlog from '../components/BlogPortalBlog';
 
 const ProjectInfo = () => {
     // Get projectId from url
@@ -69,27 +71,40 @@ const ProjectInfo = () => {
 
                 <Row>
                     <Col>
-                        <Row>
+                        <Row style={{ textAlign: 'center', marginBottom: '20px' }}>
                             <h1>{projectObj.name}</h1>
                         </Row>
-                        <Row>
-                            <p>{projectObj.description}</p>
+
+                        <Row style={{ textAlign: 'center', marginBottom: '5px' }}>
+                            <List divided horizontal>
+                                {projectObj.technologies.map((technology) => (
+                                    <ListItem style={{ fontSize: '14px', fontWeight: 'bold' }}>{technology}</ListItem>
+                                ))}
+                            </List>
                         </Row>
-                        <Row>
-                            <p>{projectObj.technologies}</p>
+
+                        <Row style={{ textAlign: 'center', flexDirection: 'row', marginBottom: '15px' }}>
+                            <List divided horizontal>
+                                <ListItem><a href={projectObj.host_link} target='_blank' rel='noreferrer'>Hosted Site</a></ListItem>
+                                <ListItem><a href={projectObj.git_link} target='_blank' rel='noreferrer'>GitHub Repo</a></ListItem>
+                            </List>
                         </Row>
+
+                        {/* Project blogs go here */}
                         <Row>
-                            <a href={projectObj.git_link} target='_blank' rel='noreferrer'>{projectObj.git_link}</a>
+                            <BlogPortalBlog></BlogPortalBlog>
                         </Row>
-                        <Row>
-                            <a href={projectObj.host_link} target='_blank' rel='noreferrer'>{projectObj.host_link}</a>
-                        </Row>
+
                     </Col>
                 </Row>
 
                 <Row style={{ marginTop: '20px' }}>
                     <Col>
-                        <ApiBlog></ApiBlog>
+                        {projectObj.has_carousel === false && projectObj.has_video === false ? (
+                            <ApiBlog></ApiBlog>
+                        ) : (
+                            <div></div>
+                        )}
                     </Col>
                 </Row>
 

@@ -40,7 +40,7 @@ const Home = () => {
                     </Col>
                     <Col lg={5}>
                         <div className='MainRightColumn'>
-                            <Image size='large' circular src='/placeholder_circle.png'></Image>
+                            <Image style={{ boxShadow: '0 6px 16px rgba(0, 0, 0, 0.3)', border: '10px white solid' }} size='large' circular src='/mainPhoto.png'></Image>
                         </div>
                     </Col>
                 </Row>

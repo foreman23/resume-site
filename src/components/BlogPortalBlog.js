@@ -1,0 +1,16 @@
+import React from 'react'
+
+const BlogPortalBlog = () => {
+  return (
+    <div style={{ width: '60%', justifyContent: 'center', margin: 'auto', fontSize: '15px', textIndent: '20px', marginBottom: '20px' }}>
+        <p>I initially created Blog Portal to be used for managing and creating blogs to be displayed on a website. My main goal with this project was to improve my understanding of backend technologies and databases. Because of this, I chose to follow the MERN technology stack (MongoDB, Express, React.js, Node.js). I had previous experience with all of the technologies in the stack besides Mongo, and so I figured it would be a good choice for this project.</p>
+        <p>I decided that the first thing I needed to do in order to start this project was to design a basic user interface. Using Figma, an online design tool, I was able to build and prototype <a href='https://www.figma.com/proto/rOsUkYd9DsNGkgk1hU4EAP/Blog-Server?node-id=1-2&starting-point-node-id=1%3A2&mode=design&t=nDQGdHyActGt3HER-1' target='_blank' rel='noreferrer'>my basic UI</a>. Designing the UI in Figma first helped a ton in streamlining the frontend development process. I was pretty easily able to replicate my Figma design using HTML/CSS.</p>
+        <p>After I had the frontend stuff out of the way, it was time to start working on the database. I chose to use MongoDB Atlas which allowed me to run and create a MongoDB cluster in the cloud. This made everything much easier for me since I do not have my own server to host a database on. </p>
+        <p>Now that I had my client application and my database set up, I needed a way to bridge the gap between the two. To do so, I created a simple REST API with endpoints to talk to my database. To make things easier, I used Mongoose, a third-party library that allows for connections between MongoDB and the JavaScript Node.js environment. My REST API has two main routes, /blogs and /photos. These two routes include all of the CRUD operations needed to create, read, update, and delete blog posts and gallery images on the database. I was now able to use the endpoints from my new API to perform these operations on my database via my client application. Images for this project are hosted on <a href='https://cloudinary.com/' target='_blank' rel='noreferrer'>Cloudinary</a>, and the API itself is hosted on Google Cloud.</p>
+        <p>The project was now mostly finished and ready to be deployed. However, I still needed to provide some form of user authentication so that random internet users stumbling across my site would not be able to mess with my database. I ended up using AWS Cognito to create an admin user that would have access to the site. Currently there is no way for users to register new accounts from the client side.</p>
+        <p>After implementing user authentication, I was finally ready to deploy my application. Because I used AWS Cognito for my user authentication, I decided that it would be a good idea to use AWS Amplify for hosting my site. AWS allows for you to deploy your site automatically from a public GitHub repo, so this was simple enough. The site is hosted <a href='https://master.d3b93eb65qaz8j.amplifyapp.com' target='_blank' rel='noreferrer'>here</a>, but you will need a username and password to be able to access it.</p>
+    </div>
+  )
+}
+
+export default BlogPortalBlog
