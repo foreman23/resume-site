@@ -1,7 +1,17 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 
-const NavigationBar = () => {
+const NavigationBarHome = () => {
+
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+            })
+        }
+    }
 
     return (
         <div>
@@ -11,7 +21,8 @@ const NavigationBar = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse style={{ marginLeft: '2%' }} id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="/">Home</Nav.Link>
+                            <Nav.Link onClick={() => scrollToSection('projects')}>Projects</Nav.Link>
+                            <Nav.Link onClick={() => scrollToSection('skills')}>Skills</Nav.Link>
                             <Nav.Link href="https://drive.google.com/file/d/1VbkeZc9g1s4rV7L2N8K2rsKbaQoJDLL6/view?usp=sharing" target='_blank'>Resume</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
@@ -21,4 +32,4 @@ const NavigationBar = () => {
     )
 }
 
-export default NavigationBar
+export default NavigationBarHome

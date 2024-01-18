@@ -10,19 +10,23 @@ import ApiBlog from '../components/ApiBlog';
 import BlogPortalBlog from '../components/BlogPortalBlog';
 
 const ProjectInfo = () => {
+
+    window.scrollTo(0, 0);
+
     // Get projectId from url
     let { projectId } = useParams();
 
     const projectObj = projectData.projects.find(project => project.id === projectId);
     console.log(projectObj)
 
-    // Carousel Settings
+    // Slider Settings
     const settings = {
         dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        lazyLoad: 'anticipated'
     };
 
     // Youtube player settings
@@ -34,6 +38,7 @@ const ProjectInfo = () => {
             autoplay: 0,
         },
     };
+
 
     return (
         <div>
