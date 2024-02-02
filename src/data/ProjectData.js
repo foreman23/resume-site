@@ -15,15 +15,17 @@ export const projectData = {
             name: 'Planespotter Website React',
             technologies: ['JavaScript', 'React.js', 'HTML', 'CSS', 'Bootstrap', 'Figma', 'Netlify'],
             git_link: 'https://github.com/foreman23/planespotter_site',
+            host_link: 'https://iridescent-dieffenbachia-dc0236.netlify.app/',
             screenshot_count: 4,
             has_carousel: true,
             has_video: false
         },
         {
             id: 'rsvp-site',
-            name: 'Quincenera RSVP Website',
+            name: 'Quinceañera RSVP Website',
             technologies: ['JavaScript', 'React.js', 'HTML', 'CSS', 'Firebase', 'Bootstrap'],
             git_link: 'https://github.com/foreman23/quince-rsvp',
+            host_link: 'https://melanie15.com/',
             screenshot_count: 6,
             has_carousel: true,
             has_video: false
@@ -33,15 +35,18 @@ export const projectData = {
             name: 'Aircraft Cargo Management RESTful API',
             technologies: ['JavaScript', 'Node.js', 'Express', 'Google Cloud', 'JWT'],
             git_link: 'https://github.com/foreman23/portfolio-api',
-            screenshot_count: 6,
-            has_carousel: false,
-            has_video: false
+            host_link: 'https://portfolio-407508.uw.r.appspot.com/',
+            screenshot_count: 5,
+            has_carousel: true,
+            has_video: false,
+            documentation_link: 'https://docs.google.com/document/d/1oyYeudSGPyIQ91cN6Y7VEYlYz3MJ9OKT0avWXMO7bqw/edit?usp=sharing'
         },
         {
             id: 'twitter-bot',
             name: 'Twitter Headline Art Bot',
             technologies: ['Python', 'Raspberry Pi', 'BeautifulSoup', 'Stable Diffusion', 'VNC Remote Viewer'],
             git_link: 'https://github.com/foreman23/news-twitter-bot',
+            host_link: 'https://twitter.com/NBA_ArtBot',
             screenshot_count: 5,
             has_carousel: true,
             has_video: false

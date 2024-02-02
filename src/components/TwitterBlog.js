@@ -1,0 +1,13 @@
+import React from 'react'
+
+const TwitterBlog = () => {
+  return (
+    <div style={{ width: '60%', justifyContent: 'center', margin: 'auto', fontSize: '15px', textIndent: '20px', marginBottom: '20px' }}>
+        <p>With the recent advancements in artificial intelligence, I have become fascinated with AI generated art and images. After messing around with Stable Diffusion for weeks on end, I decided that I wanted to start a project that involved AI generated art. After some research, I settled on the idea of creating a Twitter bot that would be able to scrape headlines from news websites and use them as prompts for AI image generation using <a target='_blank' rel='noreferrer' href='https://platform.stability.ai/docs/api-reference'>Stability’s API for image generation</a>. The final project resulted in a full-fledged bot that automatically generates images based on current NBA news headlines and posts them to Twitter along with relevant hashtags, headlines, and article links. The bot is currently being hosted on a <a target='_blank' rel='noreferrer' href='https://www.raspberrypi.com/products/raspberry-pi-3-model-a-plus/'>Raspberry Pi Model 3a+</a>.</p>
+        <p>Using Python along with BeautifulSoup, I was able to reliably scrape headlines from a variety of news websites. I eventually chose to stick with scraping Yahoo News as I found that I preferred the articles that they put out as opposed to those published by other sites such as Bing and Fox News. After some sanitizing, the headlines are then sent to the Stability API where they are used as prompts for image generation. After the image is generated, the code will first check for keywords within the headline in order to find potential hashtags that will be tweeted along with the image, article link, and headline.</p>
+        <p>Probably the most fun part about this project was finding a feasible way to host the bot. I knew that I did not want to host it on my main desktop or laptop as I intended for the bot to run 24/7 and I did not want to leave either of those computers running all day long, so I began looking for alternatives. This is when I found Raspberry Pi, which was the perfect solution to my problem. I bought myself a Pi Model 3a+ as it is one of the cheapest models that comes with built-in Wi-Fi support. After setting up the Pi, I was able to SSH into it from my main computer in order to transfer the files needed to run the bot. I am also able to use VNC Viewer to remote access the Pi so that I can monitor logs without needing a physical display connected to the Pi itself.</p>
+    </div>
+  )
+}
+
+export default TwitterBlog

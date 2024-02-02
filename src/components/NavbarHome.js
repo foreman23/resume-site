@@ -16,7 +16,7 @@ const NavigationBarHome = () => {
     return (
         <div>
             <Navbar expand="lg" className="NavBar">
-                <Container style={{ display: 'flex' }}>
+                <Container style={{ display: 'flex', marginTop: '10px' }}>
                     <Navbar.Brand style={{ fontWeight: 'bold' }} href="/">Brandon Foreman</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse style={{ marginLeft: '2%' }} id="basic-navbar-nav">

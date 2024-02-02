@@ -55,6 +55,8 @@
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
   margin: 2px;
   transition: box-shadow 0.15s ease, transform 0.15s ease;
+  width: 350px; 
+  height: 400px; 
 }
 
 .projectCard:hover {
@@ -63,11 +65,13 @@
 }
 
 .projectCardDesc {
+  position: relative;
   width: 80%;
   margin: auto;
   padding-left: 10px;
   padding-right: 10px;
   text-align: center;
+  align-self: center;
 }
 
 .projectCardTitle {
@@ -79,10 +83,13 @@
 }
 
 .projectCardButtons {
-  position: relative;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
   justify-content: center;
   display: flex;
-  margin-top: 20px;
+  margin-top: 2px;
   margin-bottom: 20px;
   z-index: 2;
   pointer-events: auto;
