@@ -12,6 +12,76 @@
   justify-content: center;
 }
 
+.MainLeftColumn p {
+  width: 80%;
+  font-size: 16px;
+}
+
+.ProjectsContainer {
+  margin-top: 115px !important;
+  width: 100%;
+}
+
+.SkillsContainer {
+  margin-top: 100px !important;
+  margin-bottom: 70px !important;
+  width: 100% !important;
+}
+
+.BlogContainer {
+  width: 60% !important;
+  justify-content: center;
+  margin: auto; 
+  font-size: 15px; 
+  text-indent: 20px; 
+  margin-bottom: 20px;
+}
+
+.ProjectBlogImage {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .MainLeftColumn {
+    margin-top: 5%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .MainLeftColumn p {
+    font-size: 14px;
+    margin: auto;
+  }
+  .FollowSocials {
+    justify-content: center !important;
+  }
+  .ProjectsContainer {
+    margin-top: 50px !important;
+    width: '100%';
+  }
+  .MainRightColumn {
+    margin-top: 50px !important;
+    display: flex;
+    justify-content: center;
+  }
+  .SkillsContainer {
+    margin-top: 60px !important;
+    margin-bottom: 70px !important;
+    width: '100%' !important;
+  }
+  .BackLinkNavBar {
+    margin-right: 20px !important; 
+  }
+  .BlogContainer {
+    margin-top: 10px !important;
+    width: 95% !important;
+  }
+}
+
 .MainRightColumn {
   margin-top: 5%;
   display: flex;
@@ -72,6 +142,7 @@
   padding-right: 10px;
   text-align: center;
   align-self: center;
+  font-size: 12px;
 }
 
 .projectCardTitle {
@@ -89,7 +160,7 @@
   right: 0px;
   justify-content: center;
   display: flex;
-  margin-top: 2px;
+  margin-top: 0px;
   margin-bottom: 20px;
   z-index: 2;
   pointer-events: auto;

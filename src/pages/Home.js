@@ -20,11 +20,11 @@ const Home = () => {
                 <Row>
                     <Col lg={7}>
                         <div className='MainLeftColumn'>
-                            <h1 style={{ color: '#0E8A5F', fontWeight: 'bolder', fontSize: 32 }}>Brandon Foreman</h1>
+                            <h2 style={{ color: '#0E8A5F', fontWeight: 'bolder', fontSize: 32 }}>Brandon Foreman</h2>
                             <h3>Software Engineer based in Portland, OR.</h3>
-                            <p style={{ width: '80%', fontSize: 16 }}>Hi, I’m Brandon, a Software Engineer located in Portland, Oregon. I have experience building all sorts of applications using JavaScript, React.js, Python, and more. My passion is in web development, both frontend and backend, but I enjoy and am knowledgeable in all aspects of software development. I have worked on projects for clients as well as for my own personal initiatives.</p>
+                            <p>Hi, I’m Brandon, a Software Engineer located in Portland, Oregon. I have experience building all sorts of applications using JavaScript, React.js, Python, and more. My passion is in web development, both frontend and backend, but I enjoy and am knowledgeable in all aspects of software development. I have worked on projects for clients as well as for my own personal initiatives.</p>
                             <Row>
-                                <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', marginTop: 10, marginBottom: 20 }}>
+                                <div className='FollowSocials' style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', marginTop: 10, marginBottom: 20 }}>
                                     <p style={{ margin: 0, marginRight: 10 }}>Follow Me</p>
                                     <a href='https://github.com/foreman23' target='_blank' rel='noreferrer'><Icon color='black' name='github' size='big'></Icon></a>
                                     <a href='https://www.linkedin.com/in/brandon-foreman-92057b280/' target='_blank' rel='noreferrer'><Icon color='black' name='linkedin' size='big'></Icon></a>
@@ -47,7 +47,7 @@ const Home = () => {
 
                 {/* Project Section */}
                 <Row style={{ justifyContent: 'center' }}>
-                    <div style={{ marginTop: 125, width: '100%' }}>
+                    <div className='ProjectsContainer'>
                         <h2 id='projects' style={{ justifyContent: 'center', textAlign: 'center' }}>Projects</h2>
                         <Divider></Divider>
                         <Row style={{ marginTop: '25px' }}>
@@ -126,7 +126,7 @@ const Home = () => {
 
                 {/* Skill Section */}
                 <Row style={{ justifyContent: 'center' }}>
-                    <div style={{ marginTop: 100, marginBottom: 70, width: '100%' }}>
+                    <div className='SkillsContainer'>
                         <h2 id='skills' style={{ justifyContent: 'center', textAlign: 'center' }}>Skills</h2>
                         <Divider></Divider>
                         <Row>

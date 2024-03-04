@@ -1,19 +1,17 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const NavigationBar = () => {
+
+    const navigate = useNavigate();
 
     return (
         <div>
             <Navbar expand="lg" className="NavBar">
                 <Container style={{ display: 'flex', marginTop: '10px' }}>
                     <Navbar.Brand style={{ fontWeight: 'bold' }} href="/">Brandon Foreman</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse style={{ marginLeft: '2%' }} id="basic-navbar-nav">
-                        <Nav className="me-auto">
-                            <Nav.Link href="/">Back</Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
+                    <Nav.Link className='BackLinkNavBar' onClick={() => navigate(-1)}>Back</Nav.Link>
                 </Container>
             </Navbar>
         </div>

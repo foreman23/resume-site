@@ -49,7 +49,7 @@ const ProjectInfo = () => {
         <div>
             <Navbar></Navbar>
             <Divider></Divider>
-            <Container style={{ justifyContent: 'center', flexDirection: 'column', paddingBottom: '50px', marginTop: '7vh' }}>
+            <Container style={{ justifyContent: 'center', flexDirection: 'column', paddingBottom: '50px', marginTop: '35px' }}>
                 <Row>
                     {projectObj.has_video === true ? (
                             <div>
@@ -59,14 +59,14 @@ const ProjectInfo = () => {
                         <Slider fade style={{ width: '65%', margin: 'auto' }} {...settings}>
                             {Array.from({ length: projectObj.screenshot_count }, (_, index) => (
                                 <div key={index}>
-                                    <img
-                                        style={{
-                                            width: '100%',
-                                            display: 'flex',
-                                            margin: 'auto',
-                                            boxShadow: '0 6px 8px rgba(0, 0, 0, 0.2)',
-                                            marginBottom: '10px',
-                                        }}
+                                    <img className='ProjectBlogImage'
+                                        // style={{
+                                        //     width: '100%',
+                                        //     display: 'flex',
+                                        //     margin: 'auto',
+                                        //     boxShadow: '0 6px 8px rgba(0, 0, 0, 0.2)',
+                                        //     marginBottom: '10px',
+                                        // }}
                                         alt={`screenshot ${index + 1}`}
                                         src={`/images/projects/${projectId}/Screenshot_${index + 1}.webp`}
                                     />
@@ -79,9 +79,7 @@ const ProjectInfo = () => {
                     }
                 </Row>
             </Container>
-
             <Container style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', margin: 'auto', alignItems: 'center', paddingBottom: '120px' }}>
-
                 <Row>
                     <Col>
                         <Row style={{ textAlign: 'center', marginBottom: '20px' }}>
@@ -91,11 +89,10 @@ const ProjectInfo = () => {
                         <Row style={{ textAlign: 'center', marginBottom: '5px' }}>
                             <List divided horizontal>
                                 {projectObj.technologies.map((technology) => (
-                                    <ListItem style={{ fontSize: '14px', fontWeight: 'bold' }}>{technology}</ListItem>
+                                    <ListItem style={{ fontSize: '12px', fontWeight: 'bold' }}>{technology}</ListItem>
                                 ))}
                             </List>
                         </Row>
-
                         <Row style={{ textAlign: 'center', flexDirection: 'row', marginBottom: '15px' }}>
                             <List divided horizontal>
                                 {projectObj.host_link ? (
@@ -111,7 +108,6 @@ const ProjectInfo = () => {
                                 )}
                             </List>
                         </Row>
-
                         {/* Project blogs go here */}
                         <Row>
                             {projectObj.id === 'blog-portal' ? (
@@ -130,12 +126,9 @@ const ProjectInfo = () => {
                                 <div></div>
                             )}
                         </Row>
-
                     </Col>
                 </Row>
-
             </Container>
-
         </div>
     )
 }

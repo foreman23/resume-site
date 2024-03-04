@@ -2,7 +2,7 @@ import React from 'react'
 
 const BlogPortalBlog = () => {
   return (
-    <div style={{ width: '60%', justifyContent: 'center', margin: 'auto', fontSize: '15px', textIndent: '20px', marginBottom: '20px' }}>
+    <div className='BlogContainer'>
         <p>I initially created Blog Portal to be used for managing and creating blogs to be displayed on a website. My main goal with this project was to improve my understanding of backend technologies and databases. Because of this, I chose to follow the MERN technology stack (MongoDB, Express, React.js, Node.js). I had previous experience with all of the technologies in the stack besides Mongo, and so I figured it would be a good choice for this project.</p>
         <p>I decided that the first thing I needed to do in order to start this project was to design a basic user interface. Using Figma, an online design tool, I was able to build and prototype <a href='https://www.figma.com/proto/rOsUkYd9DsNGkgk1hU4EAP/Blog-Server?node-id=1-2&starting-point-node-id=1%3A2&mode=design&t=nDQGdHyActGt3HER-1' target='_blank' rel='noreferrer'>my basic UI</a>. Designing the UI in Figma first helped a ton in streamlining the frontend development process. I was pretty easily able to replicate my Figma design using HTML/CSS.</p>
         <p>After I had the frontend stuff out of the way, it was time to start working on the database. I chose to use MongoDB Atlas which allowed me to run and create a MongoDB cluster in the cloud. This made everything much easier for me since I do not have my own server to host a database on. </p>
