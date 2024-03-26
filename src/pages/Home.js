@@ -24,14 +24,14 @@ const Home = () => {
                             <h3>Software Engineer based in Portland, OR.</h3>
                             <p>Hi, I’m Brandon, a Software Engineer located in Portland, Oregon. I have experience building all sorts of applications using JavaScript, React.js, Python, and more. My passion is in web development, both frontend and backend, but I enjoy and am knowledgeable in all aspects of software development. I have worked on projects for clients as well as for my own personal initiatives.</p>
                             <Row>
-                                <div className='FollowSocials' style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', marginTop: 10, marginBottom: 20 }}>
+                                <div className='FollowSocials' style={{ alignItems: 'center', marginTop: 10, marginBottom: 20 }}>
                                     <p style={{ margin: 0, marginRight: 10 }}>Follow Me</p>
                                     <a href='https://github.com/foreman23' target='_blank' rel='noreferrer'><Icon color='black' name='github' size='big'></Icon></a>
                                     <a href='https://www.linkedin.com/in/brandon-foreman-92057b280/' target='_blank' rel='noreferrer'><Icon color='black' name='linkedin' size='big'></Icon></a>
                                 </div>
                             </Row>
                             <Row>
-                                <div>
+                                <div className='HomeButtons'>
                                     <Button href='mailto:bforemana@gmail.com' className='greenButton'>Send a Message</Button>
                                     <Button href='https://drive.google.com/file/d/1VbkeZc9g1s4rV7L2N8K2rsKbaQoJDLL6/view?usp=sharing' target='_blank'>My Resume</Button>
                                 </div>
@@ -151,7 +151,7 @@ const Home = () => {
                 {/* Contact Section */}
                 <Row>
                     <div style={{ marginTop: 20, marginBottom: 140, width: '100%' }}>
-                        <h2 style={{ justifyContent: 'center', textAlign: 'center' }}>Contact</h2>
+                        <h2 id='contact' style={{ justifyContent: 'center', textAlign: 'center' }}>Contact</h2>
                         <Divider></Divider>
                         <Row>
                             <div style={{ flexDirection: 'row', display: 'flex', justifyContent: 'center' }}>
