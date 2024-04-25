@@ -2,7 +2,7 @@ import React from 'react'
 
 const ApiBlog = () => {
   return (
-    <div style={{ width: '60%', justifyContent: 'center', margin: 'auto', fontSize: '15px', textIndent: '20px', marginBottom: '20px' }}>
+    <div className='BlogContainer'>
       {/* <img style={{
         width: '100%',
         display: 'flex',

@@ -19,7 +19,7 @@ const ProjectInfo = () => {
     let { projectId } = useParams();
 
     const projectObj = projectData.projects.find(project => project.id === projectId);
-    console.log(projectObj)
+    // console.log(projectObj)
 
     // Slider Settings
     const settings = {
@@ -89,14 +89,14 @@ const ProjectInfo = () => {
                         <Row style={{ textAlign: 'center', marginBottom: '5px' }}>
                             <List divided horizontal>
                                 {projectObj.technologies.map((technology) => (
-                                    <ListItem style={{ fontSize: '12px', fontWeight: 'bold' }}>{technology}</ListItem>
+                                    <ListItem key={projectObj.name + technology} style={{ fontSize: '12px', fontWeight: 'bold' }}>{technology}</ListItem>
                                 ))}
                             </List>
                         </Row>
                         <Row style={{ textAlign: 'center', flexDirection: 'row', marginBottom: '15px' }}>
                             <List divided horizontal>
                                 {projectObj.host_link ? (
-                                    <ListItem><a href={projectObj.host_link} target='_blank' rel='noreferrer'>Deployed Project</a></ListItem>
+                                    <ListItem key={projectObj.name}><a href={projectObj.host_link} target='_blank' rel='noreferrer'>Deployed Project</a></ListItem>
                                 ) : (
                                     <ListItem><a href={'https://www.youtube.com/watch?v=yugMQLUtl20'} target='_blank' rel='noreferrer'>Mobile Client Demo</a></ListItem>
                                 )}

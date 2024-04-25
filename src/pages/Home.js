@@ -23,14 +23,14 @@ const Home = () => {
                             <h2 style={{ color: '#0E8A5F', fontWeight: 'bolder', fontSize: 32 }}>Brandon Foreman</h2>
                             <h3>Software Engineer based in Portland, OR.</h3>
                             <p>Hi, I’m Brandon, a Software Engineer located in Portland, Oregon. I have experience building all sorts of applications using JavaScript, React.js, Python, and more. My passion is in web development, both frontend and backend, but I enjoy and am knowledgeable in all aspects of software development. I have worked on projects for clients as well as for my own personal initiatives.</p>
-                            <Row>
+                            {/* <Row>
                                 <div className='FollowSocials' style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', marginTop: 10, marginBottom: 20 }}>
-                                    <p style={{ margin: 0, marginRight: 10 }}>Follow Me</p>
+                                    <p>Follow Me</p>
                                     <a href='https://github.com/foreman23' target='_blank' rel='noreferrer'><Icon color='black' name='github' size='big'></Icon></a>
                                     <a href='https://www.linkedin.com/in/brandon-foreman-92057b280/' target='_blank' rel='noreferrer'><Icon color='black' name='linkedin' size='big'></Icon></a>
                                 </div>
-                            </Row>
-                            <Row>
+                            </Row> */}
+                            <Row style={{ marginTop: '20px' }}>
                                 <div>
                                     <Button href='mailto:bforemana@gmail.com' className='greenButton'>Send a Message</Button>
                                     <Button href='https://drive.google.com/file/d/1VbkeZc9g1s4rV7L2N8K2rsKbaQoJDLL6/view?usp=sharing' target='_blank'>My Resume</Button>
@@ -53,7 +53,7 @@ const Home = () => {
                         <Row style={{ marginTop: '25px' }}>
                             <Col>
                                 <div className='projectCard' onClick={() => navigate('/blog-portal')}>
-                                    <img className='projectImage' alt='blog portal' src='/images/projects/blog-portal/blog-portal-thumb.webp' bordered></img>
+                                    <img className='projectImage' alt='blog portal' src='/images/projects/blog-portal/blog-portal-thumb.webp'></img>
                                     <h3 className='projectCardTitle'>Blog Portal</h3>
                                     <p style={{ top: '10px' }} className='projectCardDesc'>Simple web application that allows for blog creation and management.</p>
                                     <div className='projectCardButtons'>
@@ -64,7 +64,7 @@ const Home = () => {
                             </Col>
                             <Col>
                                 <div className='projectCard' onClick={() => navigate('/spotter-site')}>
-                                    <img className='projectImage' alt='spotter site' src='/images/projects/spotter-site/spotter-site-thumb.webp' bordered></img>
+                                    <img className='projectImage' alt='spotter site' src='/images/projects/spotter-site/spotter-site-thumb.webp'></img>
                                     <h3 className='projectCardTitle'>Planespotter Website React</h3>
                                     <p style={{ top: '10px' }} className='projectCardDesc'>Frontend website concept/prototype built in React for a friend.</p>
                                     <div className='projectCardButtons'>
@@ -76,7 +76,7 @@ const Home = () => {
                             </Col>
                             <Col>
                                 <div className='projectCard' onClick={() => navigate('/rsvp-site')}>
-                                    <img className='projectImage' alt='quince rsvp' src='/images/projects/rsvp-site/rsvp-site-thumb.webp' bordered></img>
+                                    <img className='projectImage' alt='quince rsvp' src='/images/projects/rsvp-site/rsvp-site-thumb.webp'></img>
                                     <h3 className='projectCardTitle'>Quinceañera RSVP Website</h3>
                                     <p style={{ top: '10px' }} className='projectCardDesc'>Digital RSVP page built for a client for their daughter's quince.</p>
                                     <div className='projectCardButtons'>
@@ -86,10 +86,10 @@ const Home = () => {
                                 </div>
                             </Col>
                         </Row>
-                        <Row style={{ marginTop: 20 }}>
+                        <Row className='dividingRowProjects'>
                             <Col>
                                 <div className='projectCard' onClick={() => navigate('/aircraft-api')}>
-                                    <img className='projectImage' alt='aircraft api' src='/images/projects/aircraft-api/portfolio-api-thumb.webp' bordered></img>
+                                    <img className='projectImage' alt='aircraft api' src='/images/projects/aircraft-api/portfolio-api-thumb.webp'></img>
                                     <h3 className='projectCardTitle'>Aircraft Cargo Management RESTful API</h3>
                                     <p className='projectCardDesc'>CS 493 Final Project. A RESTful API for managing cargo loads on aircraft.</p>
                                     <div className='projectCardButtons'>
@@ -100,7 +100,7 @@ const Home = () => {
                             </Col>
                             <Col>
                                 <div className='projectCard' onClick={() => navigate('/twitter-bot')}>
-                                    <img className='projectImage' alt='twitter bot' src='/images/projects/twitter-bot/twitter-bot-thumb.webp' bordered></img>
+                                    <img className='projectImage' alt='twitter bot' src='/images/projects/twitter-bot/twitter-bot-thumb.webp'></img>
                                     <h3 className='projectCardTitle'>Twitter Headline Art Bot</h3>
                                     <p style={{ top: '10px' }} className='projectCardDesc'>Fun project utilizing Raspberry Pi and Python to build an AI powered art bot.</p>
                                     <div className='projectCardButtons'>
@@ -112,7 +112,7 @@ const Home = () => {
                             </Col>
                             <Col>
                                 <div className='projectCard' onClick={() => navigate('/vet-panel')}>
-                                    <img className='projectImage' alt='admin panel' src='/images/projects/vet-panel/vet-panel-thumb.webp' bordered></img>
+                                    <img className='projectImage' alt='admin panel' src='/images/projects/vet-panel/vet-panel-thumb.webp'></img>
                                     <h3 className='projectCardTitle'>Web Panel - Veterinary Drug App</h3>
                                     <p className='projectCardDesc'>Senior capstone group project. A webpanel for managing a database for a mobile application.</p>
                                     <div className='projectCardButtons'>
