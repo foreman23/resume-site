@@ -17,7 +17,7 @@ const Home = () => {
             <Container className='MainContainer'>
 
                 {/* Home Section */}
-                <Row>
+                <Row className='upperContainerHome'>
                     <Col lg={7}>
                         <div className='MainLeftColumn'>
                             <h2 style={{ color: '#0E8A5F', fontWeight: 'bolder', fontSize: 32 }}>Brandon Foreman</h2>
@@ -129,7 +129,7 @@ const Home = () => {
                     <div className='SkillsContainer'>
                         <h2 id='skills' style={{ justifyContent: 'center', textAlign: 'center' }}>Skills</h2>
                         <Divider></Divider>
-                        <Row>
+                        <Row style={{ padding: '15px' }}> 
                             <div style={{ flexDirection: 'row', display: 'flex', justifyContent: 'center' }}>
                                 <Image className='skillLogo' size='tiny' src='/images/skills/js.webp'></Image>
                                 <Image className='skillLogo' size='tiny' src='/images/skills/node.webp'></Image>

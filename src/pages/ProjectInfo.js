@@ -86,7 +86,7 @@ const ProjectInfo = () => {
                             <h1>{projectObj.name}</h1>
                         </Row>
 
-                        <Row style={{ textAlign: 'center', marginBottom: '5px' }}>
+                        <Row style={{ textAlign: 'center', marginBottom: '5px', padding: '15px' }}>
                             <List divided horizontal>
                                 {projectObj.technologies.map((technology) => (
                                     <ListItem key={projectObj.name + technology} style={{ fontSize: '12px', fontWeight: 'bold' }}>{technology}</ListItem>
