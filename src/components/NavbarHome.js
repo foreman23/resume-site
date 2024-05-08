@@ -23,7 +23,7 @@ const NavigationBarHome = () => {
                         <Nav className="me-auto">
                             <Nav.Link onClick={() => scrollToSection('projects')}>Projects</Nav.Link>
                             <Nav.Link onClick={() => scrollToSection('skills')}>Skills</Nav.Link>
-                            <Nav.Link href="https://drive.google.com/file/d/1_N5RdMosvv9JHFcTeE5q_c4BgzYAH6K6/view?usp=sharing" target='_blank'>Resume</Nav.Link>
+                            <Nav.Link href="https://drive.google.com/file/d/1PhnpkAbG1oLbqNokK6Sm412q98qvA65I/view?usp=sharing" target='_blank'>Resume</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
