@@ -33,7 +33,7 @@ const Home = () => {
                             <Row style={{ marginTop: '20px' }}>
                                 <div>
                                     <Button href='mailto:bforemana@gmail.com' className='greenButton'>Send a Message</Button>
-                                    <Button href='https://drive.google.com/file/d/1PhnpkAbG1oLbqNokK6Sm412q98qvA65I/view?usp=sharing' target='_blank'>My Resume</Button>
+                                    <Button href='https://drive.google.com/file/d/1V-3XpTJLuIEanMAVc2SKf0u0viK61QV6/view?usp=sharing' target='_blank'>My Resume</Button>
                                 </div>
                             </Row>
                         </div>
