@@ -24,7 +24,7 @@ const NavigationBarHome = () => {
                             <Nav.Link onClick={() => scrollToSection('projects')}>Projects</Nav.Link>
                             <Nav.Link onClick={() => scrollToSection('skills')}>Skills</Nav.Link>
                             <Nav.Link onClick={() => scrollToSection('contact')}>Contact</Nav.Link>
-                            <Nav.Link href="https://drive.google.com/file/d/1VbkeZc9g1s4rV7L2N8K2rsKbaQoJDLL6/view?usp=sharing" target='_blank'>Resume</Nav.Link>
+                            <Nav.Link href="https://drive.google.com/file/d/1V-3XpTJLuIEanMAVc2SKf0u0viK61QV6/view?usp=sharing" target='_blank'>Resume</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
