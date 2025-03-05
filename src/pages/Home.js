@@ -18,7 +18,7 @@ const Home = () => {
 
                 {/* Home Section */}
                 <Row className='upperContainerHome'>
-                    <Col xs={{ order: 2 }} lg={7}>
+                    <Col xs={{ order: 2 }}  lg={7}>
                         <div className='MainLeftColumn'>
                             <h2 style={{ color: '#0E8A5F', fontWeight: 'bolder', fontSize: 32 }}>Brandon Foreman</h2>
                             <h3>Web Developer based in Portland, OR.</h3>
