@@ -278,7 +278,7 @@ body {
   }
   .ProjectsContainer {
     margin-top: 50px !important;
-    width: '100%';
+    width: unset !important;
   }
   .projectCard {
     margin: 5px !important;
@@ -302,6 +302,10 @@ body {
   }
   .dividingRowProjects {
     margin-top: 0px !important;
+    margin: auto !important;
+  }
+  .rowOneProjects {
+    margin: auto !important;
   }
 }
 

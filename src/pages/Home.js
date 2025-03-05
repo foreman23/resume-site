@@ -75,7 +75,7 @@ const Home = () => {
                     <div className='ProjectsContainer'>
                         <h2 id='projects' style={{ justifyContent: 'center', textAlign: 'center' }}>Other Projects</h2>
                         <Divider style={{ width: '80%', margin: 'auto' }}></Divider>
-                        <Row style={{ marginTop: '25px' }}>
+                        <Row className='rowOneProjects' style={{ marginTop: '25px' }}>
                             <Col xs={12} sm={12} md={4}>
                                 <a className='projectAnchor' href='/blog-portal'>
                                     <div className='projectCard'>
