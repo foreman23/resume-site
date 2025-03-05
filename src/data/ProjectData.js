@@ -60,6 +60,17 @@ export const projectData = {
             has_carousel: false,
             has_video: true,
             video_id: 'r-gtaJBzvnQ'
+        },
+        {
+            id: 'rift-report',
+            name: 'RiftReport.gg - League of Legends Match Analysis Site',
+            technologies: ['JavaScript', 'React.js', 'HTML/CSS', 'Node.js', 'Express', 'Firebase', 'Figma'],
+            git_link: 'https://github.com/foreman23/league-stats',
+            host_link: 'https://league-stats-production.up.railway.app/',
+            figma_link: 'https://www.figma.com/proto/M55NRGZHTGDi3OYaeedaCn/all-together?node-id=0-1&t=9eKp8FwUjURyuLUj-1',
+            screenshot_count: 10,
+            has_carousel: true,
+            has_video: false
         }
     ]
 }

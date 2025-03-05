@@ -12,6 +12,7 @@ import SpotterSiteBlog from '../components/SpotterSiteBlog';
 import RsvpSiteBlog from '../components/RsvpSiteBlog';
 import TwitterBlog from '../components/TwitterBlog';
 import VetPanelBlog from '../components/VetPanelBlog';
+import RiftBlog from '../components/RiftBlog';
 
 const ProjectInfo = () => {
 
@@ -52,9 +53,9 @@ const ProjectInfo = () => {
             <Container style={{ justifyContent: 'center', flexDirection: 'column', paddingBottom: '50px', marginTop: '35px' }}>
                 <Row>
                     {projectObj.has_video === true ? (
-                            <div>
-                                <YouTube style={{ display: 'flex', justifyContent: 'center' }} videoId={`${projectObj.video_id}`} opts={opts}></YouTube>
-                            </div>
+                        <div>
+                            <YouTube style={{ display: 'flex', justifyContent: 'center' }} videoId={`${projectObj.video_id}`} opts={opts}></YouTube>
+                        </div>
                     ) : projectObj.has_carousel === true ? (
                         <Slider fade style={{ width: '65%', margin: 'auto' }} {...settings}>
                             {Array.from({ length: projectObj.screenshot_count }, (_, index) => (
@@ -106,6 +107,11 @@ const ProjectInfo = () => {
                                 ) : (
                                     <div></div>
                                 )}
+                                {projectObj.figma_link ? (
+                                    <ListItem><a href={projectObj.figma_link} target='_blank' rel='noreferrer'>Figma</a></ListItem>
+                                ) : (
+                                    <div></div>
+                                )}
                             </List>
                         </Row>
                         {/* Project blogs go here */}
@@ -122,6 +128,8 @@ const ProjectInfo = () => {
                                 <TwitterBlog></TwitterBlog>
                             ) : projectObj.id === 'vet-panel' ? (
                                 <VetPanelBlog></VetPanelBlog>
+                            ) : projectObj.id ==='rift-report' ? (
+                                <RiftBlog></RiftBlog>
                             ) : (
                                 <div></div>
                             )}

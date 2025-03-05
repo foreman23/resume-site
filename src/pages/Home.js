@@ -18,107 +18,142 @@ const Home = () => {
 
                 {/* Home Section */}
                 <Row className='upperContainerHome'>
-                    <Col lg={7}>
+                    <Col xs={{ order: 2 }} lg={7}>
                         <div className='MainLeftColumn'>
                             <h2 style={{ color: '#0E8A5F', fontWeight: 'bolder', fontSize: 32 }}>Brandon Foreman</h2>
-                            <h3>Software Engineer based in Portland, OR.</h3>
-                            <p>Hi, I’m Brandon, a Software Engineer located in Portland, Oregon. I have experience building all sorts of applications using JavaScript, React.js, Python, and more. My passion is in web development, both frontend and backend, but I enjoy and am knowledgeable in all aspects of software development. I have worked on projects for clients as well as for my own personal initiatives.</p>
+                            <h3>Web Developer based in Portland, OR.</h3>
+                            <p>Hi, I’m Brandon, a Web Developer located in Portland, Oregon. I have experience building all sorts of applications using JavaScript, React.js, Python, and more. My passion is in web development, both frontend and backend, but I enjoy and am knowledgeable in all aspects of software development. I have worked on projects for clients as well as for my own personal initiatives.</p>
                             {/* <Row>
                                 <div className='FollowSocials' style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', marginTop: 10, marginBottom: 20 }}>
-                                    <p>Follow Me</p>
                                     <a href='https://github.com/foreman23' target='_blank' rel='noreferrer'><Icon color='black' name='github' size='big'></Icon></a>
                                     <a href='https://www.linkedin.com/in/brandon-foreman-92057b280/' target='_blank' rel='noreferrer'><Icon color='black' name='linkedin' size='big'></Icon></a>
                                 </div>
                             </Row> */}
                             <Row style={{ marginTop: '20px' }}>
-                                <div>
+                                <div className='contactBtnsContainer'>
                                     <Button href='mailto:bforemana@gmail.com' className='greenButton'>Send a Message</Button>
-                                    <Button href='https://drive.google.com/file/d/1gPSY7765yOfFKCrhqqBxpjfmGXXsvI5L/view' target='_blank'>My Resume</Button>
+                                    <Button href='https://drive.google.com/file/d/18HvTlkIGPFlGI9j91fLnQnZn7Z_jRU9P/view?usp=sharing' className='greyButton' target='_blank'>My Resume</Button>
                                 </div>
                             </Row>
                         </div>
                     </Col>
-                    <Col lg={5}>
+                    <Col xs={{ order: 1 }} className='order-xl-first' lg={5}>
                         <div className='MainRightColumn'>
-                            <Image style={{ boxShadow: '0 6px 16px rgba(0, 0, 0, 0.3)', border: '10px white solid' }} size='large' circular src='/mainPhoto.png'></Image>
+                            <Image style={{ boxShadow: '0 6px 16px rgba(0, 0, 0, 0.3)' }} size='large' circular src='/photo.png'></Image>
                         </div>
                     </Col>
                 </Row>
 
-                {/* Project Section */}
+                {/* Main Project */}
                 <Row style={{ justifyContent: 'center' }}>
                     <div className='ProjectsContainer'>
-                        <h2 id='projects' style={{ justifyContent: 'center', textAlign: 'center' }}>Projects</h2>
-                        <Divider></Divider>
-                        <Row style={{ marginTop: '25px' }}>
-                            <Col>
-                                <div className='projectCard' onClick={() => navigate('/blog-portal')}>
-                                    <img className='projectImage' alt='blog portal' src='/images/projects/blog-portal/blog-portal-thumb.webp'></img>
-                                    <h3 className='projectCardTitle'>Blog Portal</h3>
-                                    <p style={{ top: '10px' }} className='projectCardDesc'>Simple web application that allows for blog creation and management.</p>
-                                    <div className='projectCardButtons'>
+                        <h2 style={{ justifyContent: 'center', textAlign: 'center' }}>RiftReport.gg</h2>
+                        <Divider style={{ width: '80%', margin: 'auto' }}></Divider>
+                        <div style={{ marginTop: '25px', width: '100%', position: 'relative' }}>
+                            <a className='projectAnchor' href='/rift-report'>
+                                <div className='projectCardLarge'>
+                                    <div className='projectCardLargeImgContainer'>
+                                        <img alt='Rift Report' style={{ borderRadius: '2px' }} src='/images/projects/rift-report/Screenshot_1.webp'></img>
+                                    </div>
+                                    <div className='projectCardLargeTextContainer'>
+                                        <h3>RiftReport.gg - League of Legends Match Analysis Site</h3>
+                                        <p style={{ fontSize: '1rem', lineHeight: '1.425rem', marginTop: '10px' }}>This is the main project that I have been working on over the past year. RiftReport.gg is a full-stack web application built using React.js that allows League of Legends players to view detailed analytics for their most recent matches.</p>
+                                        <p style={{ fontSize: '1rem', lineHeight: '1.425rem' }}>It started as a revival of an older website, likeaboss.gg, with the goal of offering a clean and efficient way to analyze player profiles, match data, and performance trends for the game. RiftReport utilizes the official Riot Games API to provide up-to-date information so that players can track their progress and improve their gameplay.</p>
+                                        {/* <div style={{ marginTop: '20px' }}>
                                         <Button onClick={(e) => { e.stopPropagation(); window.open('https://master.d3b93eb65qaz8j.amplifyapp.com/blogs', '_blank'); }} className='greenButton'>Open Site</Button>
-                                        <Button onClick={(e) => { e.stopPropagation(); window.open('https://github.com/foreman23/blog_portal', '_blank'); }}>GitHub Repo</Button>
+                                        <Button onClick={(e) => { e.stopPropagation(); window.open('https://github.com/foreman23/portfolio-api', '_blank'); }}>GitHub Repo</Button>
+                                    </div> */}
                                     </div>
                                 </div>
+                            </a>
+                        </div>
+                    </div>
+                </Row>
+
+                {/* Other Projects Section */}
+                <Row style={{ justifyContent: 'center' }}>
+                    <div className='ProjectsContainer'>
+                        <h2 id='projects' style={{ justifyContent: 'center', textAlign: 'center' }}>Other Projects</h2>
+                        <Divider style={{ width: '80%', margin: 'auto' }}></Divider>
+                        <Row style={{ marginTop: '25px' }}>
+                            <Col xs={12} sm={12} md={4}>
+                                <a className='projectAnchor' href='/blog-portal'>
+                                    <div className='projectCard'>
+                                        <img className='projectImage' alt='blog portal' src='/images/projects/blog-portal/blog-portal-thumb.webp'></img>
+                                        <h3 className='projectCardTitle'>Blog Portal</h3>
+                                        <p style={{ top: '10px' }} className='projectCardDesc'>Simple web application that allows for blog creation and management.</p>
+                                        {/* <div className='projectCardButtons'>
+                                            <Button onClick={(e) => { e.stopPropagation(); window.open('https://master.d3b93eb65qaz8j.amplifyapp.com/blogs', '_blank'); }} className='greenButton'>Open Site</Button>
+                                            <Button onClick={(e) => { e.stopPropagation(); window.open('https://github.com/foreman23/blog_portal', '_blank'); }}>GitHub Repo</Button>
+                                        </div> */}
+                                    </div>
+                                </a>
                             </Col>
-                            <Col>
-                                <div className='projectCard' onClick={() => navigate('/spotter-site')}>
-                                    <img className='projectImage' alt='spotter site' src='/images/projects/spotter-site/spotter-site-thumb.webp'></img>
-                                    <h3 className='projectCardTitle'>Planespotter Website React</h3>
-                                    <p style={{ top: '10px' }} className='projectCardDesc'>Frontend website concept/prototype built in React for a friend.</p>
-                                    <div className='projectCardButtons'>
+                            <Col xs={12} sm={12} md={4}>
+                                <a className='projectAnchor' href='/spotter-site'>
+                                    <div className='projectCard'>
+                                        <img className='projectImage' alt='spotter site' src='/images/projects/spotter-site/spotter-site-thumb.webp'></img>
+                                        <h3 className='projectCardTitle'>Planespotter Website React</h3>
+                                        <p style={{ top: '10px' }} className='projectCardDesc'>Frontend website concept/prototype built in React for a friend.</p>
+                                        {/* <div className='projectCardButtons'>
                                         <Button onClick={(e) => { e.stopPropagation(); window.open('https://iridescent-dieffenbachia-dc0236.netlify.app/', '_blank'); }} className='greenButton'>Open Site</Button>
                                         <Button onClick={(e) => { e.stopPropagation(); window.open('https://github.com/foreman23/planespotter_site', '_blank'); }}>GitHub Repo</Button>
+                                    </div> */}
                                     </div>
-                                </div>
-
+                                </a>
                             </Col>
-                            <Col>
-                                <div className='projectCard' onClick={() => navigate('/rsvp-site')}>
-                                    <img className='projectImage' alt='quince rsvp' src='/images/projects/rsvp-site/rsvp-site-thumb.webp'></img>
-                                    <h3 className='projectCardTitle'>Quinceañera RSVP Website</h3>
-                                    <p style={{ top: '10px' }} className='projectCardDesc'>Digital RSVP page built for a client for their daughter's quince.</p>
-                                    <div className='projectCardButtons'>
+                            <Col xs={12} sm={12} md={4}>
+                                <a className='projectAnchor' href='/rsvp-site'>
+                                    <div className='projectCard' onClick={() => navigate('/rsvp-site')}>
+                                        <img className='projectImage' alt='quince rsvp' src='/images/projects/rsvp-site/rsvp-site-thumb.webp'></img>
+                                        <h3 className='projectCardTitle'>Quinceañera RSVP Website</h3>
+                                        <p style={{ top: '10px' }} className='projectCardDesc'>Digital RSVP page built for a client for their daughter's quince.</p>
+                                        {/* <div className='projectCardButtons'>
                                         <Button onClick={(e) => { e.stopPropagation(); window.open('https://melanie15.com/', '_blank'); }} className='greenButton'>Open Site</Button>
                                         <Button onClick={(e) => { e.stopPropagation(); window.open('https://github.com/foreman23/quince-rsvp', '_blank'); }}>GitHub Repo</Button>
+                                    </div> */}
                                     </div>
-                                </div>
+                                </a>
                             </Col>
                         </Row>
                         <Row className='dividingRowProjects'>
-                            <Col>
-                                <div className='projectCard' onClick={() => navigate('/aircraft-api')}>
-                                    <img className='projectImage' alt='aircraft api' src='/images/projects/aircraft-api/portfolio-api-thumb.webp'></img>
-                                    <h3 className='projectCardTitle'>Aircraft Cargo Management RESTful API</h3>
-                                    <p className='projectCardDesc'>CS 493 Final Project. A RESTful API for managing cargo loads on aircraft.</p>
-                                    <div className='projectCardButtons'>
+                            <Col xs={12} sm={12} md={4}>
+                                <a className='projectAnchor' href='/aircraft-api'>
+                                    <div className='projectCard'>
+                                        <img className='projectImage' alt='aircraft api' src='/images/projects/aircraft-api/portfolio-api-thumb.webp'></img>
+                                        <h3 className='projectCardTitle'>Aircraft Cargo Management RESTful API</h3>
+                                        <p className='projectCardDesc'>CS 493 Final Project. A RESTful API for managing cargo loads on aircraft.</p>
+                                        {/* <div className='projectCardButtons'>
                                         <Button onClick={(e) => { e.stopPropagation(); window.open('https://portfolio-407508.uw.r.appspot.com/', '_blank'); }} className='greenButton'>Open Project</Button>
                                         <Button onClick={(e) => { e.stopPropagation(); window.open('https://github.com/foreman23/portfolio-api', '_blank'); }}>GitHub Repo</Button>
+                                    </div> */}
                                     </div>
-                                </div>
+                                </a>
                             </Col>
-                            <Col>
-                                <div className='projectCard' onClick={() => navigate('/twitter-bot')}>
-                                    <img className='projectImage' alt='twitter bot' src='/images/projects/twitter-bot/twitter-bot-thumb.webp'></img>
-                                    <h3 className='projectCardTitle'>Twitter Headline Art Bot</h3>
-                                    <p style={{ top: '10px' }} className='projectCardDesc'>Fun project utilizing Raspberry Pi and Python to build an AI powered art bot.</p>
-                                    <div className='projectCardButtons'>
+                            <Col xs={12} sm={12} md={4}>
+                                <a className='projectAnchor' href='/twitter-bot'>
+                                    <div className='projectCard'>
+                                        <img className='projectImage' alt='twitter bot' src='/images/projects/twitter-bot/twitter-bot-thumb.webp'></img>
+                                        <h3 className='projectCardTitle'>Twitter Headline Art Bot</h3>
+                                        <p style={{ top: '10px' }} className='projectCardDesc'>Fun project utilizing Raspberry Pi and Python to build an AI powered art bot.</p>
+                                        {/* <div className='projectCardButtons'>
                                         <Button onClick={(e) => { e.stopPropagation(); window.open('https://twitter.com/NBA_ArtBot', '_blank'); }} color='twitter'>Open Twitter</Button>
                                         <Button onClick={(e) => { e.stopPropagation(); window.open('https://github.com/foreman23/news-twitter-bot', '_blank'); }}>GitHub Repo</Button>
+                                    </div> */}
                                     </div>
-                                </div>
-
+                                </a>
                             </Col>
-                            <Col>
-                                <div className='projectCard' onClick={() => navigate('/vet-panel')}>
-                                    <img className='projectImage' alt='admin panel' src='/images/projects/vet-panel/vet-panel-thumb.webp'></img>
-                                    <h3 className='projectCardTitle'>Web Panel - Veterinary Drug App</h3>
-                                    <p className='projectCardDesc'>Senior capstone group project. A webpanel for managing a database for a mobile application.</p>
-                                    <div className='projectCardButtons'>
+                            <Col xs={12} sm={12} md={4}>
+                                <a className='projectAnchor' href='/vet-panel'>
+                                    <div className='projectCard'>
+                                        <img className='projectImage' alt='admin panel' src='/images/projects/vet-panel/vet-panel-thumb.webp'></img>
+                                        <h3 className='projectCardTitle'>Web Panel - Veterinary Drug App</h3>
+                                        <p className='projectCardDesc'>Senior capstone group project. A webpanel for managing a database for a mobile application.</p>
+                                        {/* <div className='projectCardButtons'>
                                         <Button onClick={(e) => { e.stopPropagation(); window.open('https://github.com/katieschaum/vetwebapp', '_blank'); }}>GitHub Repo</Button>
+                                    </div> */}
                                     </div>
-                                </div>
+                                </a>
                             </Col>
                         </Row>
                     </div>
@@ -129,7 +164,7 @@ const Home = () => {
                     <div className='SkillsContainer'>
                         <h2 id='skills' style={{ justifyContent: 'center', textAlign: 'center' }}>Skills</h2>
                         <Divider></Divider>
-                        <Row style={{ padding: '15px' }}> 
+                        <Row style={{ padding: '15px' }}>
                             <div style={{ flexDirection: 'row', display: 'flex', justifyContent: 'center' }}>
                                 <Image className='skillLogo' size='tiny' src='/images/skills/js.webp'></Image>
                                 <Image className='skillLogo' size='tiny' src='/images/skills/node.webp'></Image>
