@@ -21,8 +21,8 @@ const Home = () => {
                     <Col xs={{ order: 2 }}  lg={7}>
                         <div className='MainLeftColumn'>
                             <h2 style={{ color: '#0E8A5F', fontWeight: 'bolder', fontSize: 32 }}>Brandon Foreman</h2>
-                            <h3>Web Developer based in Portland, OR.</h3>
-                            <p>Hi, I’m Brandon, a Web Developer located in Portland, Oregon. I have experience building all sorts of applications using JavaScript, React.js, Python, and more. My passion is in web development, both frontend and backend, but I enjoy and am knowledgeable in all aspects of software development. I have worked on projects for clients as well as for my own personal initiatives.</p>
+                            <h3>Web Developer</h3>
+                            <p>Hi, I’m Brandon. I have experience building all sorts of applications using JavaScript, React.js, Python, and more. My passion is in web development, both frontend and backend, but I enjoy and am knowledgeable in all aspects of software development. I have worked on projects for clients as well as for my own personal initiatives.</p>
                             {/* <Row>
                                 <div className='FollowSocials' style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', marginTop: 10, marginBottom: 20 }}>
                                     <a href='https://github.com/foreman23' target='_blank' rel='noreferrer'><Icon color='black' name='github' size='big'></Icon></a>
