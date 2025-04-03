@@ -66,7 +66,7 @@ export const projectData = {
             name: 'RiftReport.gg - League of Legends Match Analysis Site',
             technologies: ['JavaScript', 'React.js', 'HTML/CSS', 'Node.js', 'Express', 'Firebase', 'Figma'],
             git_link: 'https://github.com/foreman23/league-stats',
-            host_link: 'https://league-stats-production.up.railway.app/',
+            host_link: 'https://riftreport.gg/',
             figma_link: 'https://www.figma.com/proto/M55NRGZHTGDi3OYaeedaCn/all-together?node-id=0-1&t=9eKp8FwUjURyuLUj-1',
             screenshot_count: 10,
             has_carousel: true,
