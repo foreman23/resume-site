@@ -24,7 +24,7 @@ const NavigationBarHome = () => {
                             <Nav.Link href="/rift-report">RiftReport.gg</Nav.Link>
                             <Nav.Link onClick={() => scrollToSection('projects')}>Other Projects</Nav.Link>
                             <Nav.Link onClick={() => scrollToSection('skills')}>Skills</Nav.Link>
-                            <Nav.Link href="https://drive.google.com/file/d/18HvTlkIGPFlGI9j91fLnQnZn7Z_jRU9P/view?usp=sharing" target='_blank'>Resume</Nav.Link>
+                            <Nav.Link href="https://drive.google.com/file/d/1RXNTD941WEnflezCABpWKGZTqdPZwlyH/view?usp=sharing" target='_blank'>Resume</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
